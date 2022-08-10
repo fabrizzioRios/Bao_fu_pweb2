@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
+{% block title %}
+    Lista de proveedores
+{% endblock %}
+
+{% block main %}
+
+    <h1>Lista de proveedores</h1>
+<table class="table">
+    <thead>
+      <tr>
+          <th>Nombre del proveedor</th>
+          <th>Nombre del manager</th>
+          <th>Numero de telefono</th>
+          <th>Descripcion</th>
+          <th>Direccion</th>
+
+      </tr>
+    </thead>
+    <tbody>
+    {% for supplier in supplier_list %}
+      <tr>
+          <td>{{supplier.name}}</td>
+          <td>{{supplier.manager_name}}</td>
+          <td>{{supplier.phone_number}}</td>
+          <td>{{supplier.description}}</td>
+          <td>{{supplier.address}}</td>
+      </tr>
+    {% endfor %}
+
+    </tbody>
+  </table>
+{% endblock %}
