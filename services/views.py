@@ -2,10 +2,9 @@ from django.shortcuts import render, redirect
 from django.conf import settings
 from django.core.mail import send_mail
 from django.contrib.auth import login
-from services.forms import SupplierForm
+from services.forms import SupplierForm, UserForm
 from django.views import generic
 from services.models import Supplier
-from services.forms import UserForm
 
 
 # Create your views here.

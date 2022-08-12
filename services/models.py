@@ -15,14 +15,3 @@ class Supplier(models.Model):
     phone_number = models.CharField(max_length=100)
     description = models.CharField(max_length=300)
     address = models.CharField(max_length=150)
-
-
-# class User(models.Model):
-#   username = models.CharField(max_length=100)
-#  first_name = models.CharField(max_length=100)
-# last_name = models.CharField(max_length=100)
-# email_address = models.EmailField(max_length=100)
-# password = models.CharField(max_length=50)
-# age = models.IntegerField()
-# phone_number = models.IntegerField()
-# address = models.CharField(max_length=100)

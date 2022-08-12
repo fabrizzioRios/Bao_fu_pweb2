@@ -1,8 +1,53 @@
 {% extends 'base.html' %}
+{%load static%}
+
 
 {% block main %}
-
 {% endblock %}
 {% block img %}
-
+<h1 class="h1Menu">Nuestro Menú</h1>
+<div class="cont">
+    <div class="fondoMenu">
+        <div class="card">
+            <div class="card-image">
+                <img src="{% static 'img/almendras.jpg'%}" alt="" class="foto">
+            </div>
+            <div class="category"> Platillo </div>
+            <div class="heading"> Pollo a la Almendra
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="{% static 'img/arrozfrito.jpg'%}" alt="" class="foto">
+            </div>
+            <div class="category"> Acompañamiento </div>
+            <div class="heading"> Arroz Frito
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="{% static 'img/cerdoagridulce.jpg'%}" alt="" class="foto">
+            </div>
+            <div class="category"> Platillo </div>
+            <div class="heading"> Cerdo Agridulce
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="{% static 'img/chowmein.jpg'%}" alt="" class="foto">
+            </div>
+            <div class="category"> Acompañamiento </div>
+            <div class="heading"> Chowmein  
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="{% static 'img/gatotempura.jpg'%}" alt="" class="foto">
+            </div>
+            <div class="category"> Platillo </div>
+            <div class="heading"> Gato Tempura
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
